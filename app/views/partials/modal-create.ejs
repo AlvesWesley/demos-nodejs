@@ -1,0 +1,35 @@
+<div id="create" class="modal">
+  <div class="modal-content">
+    <form id="form-create" action="/todos/create" method="POST">
+      <input id="id" name="id" class="hide" hidden>
+      <div class="input-field">
+        <input
+          placeholder="Fazer compras"
+          id="title"
+          name="title"
+          type="text"
+          class="validate"
+          maxlength="30"
+          required
+        />
+        <label for="title">Título</label>
+      </div>
+      <div class="input-field">
+        <textarea
+          placeholder="Descrição"
+          id="description"
+          name="description"
+          class="materialize-textarea"
+          data-length="200"
+        ></textarea>
+        <label for="description">Descrição</label>
+      </div>
+      <button class="btn waves-effect waves-light modal-close" type="button">
+        Cancelar
+      </button>
+      <button class="btn waves-effect waves-light right" type="submit">
+        Salvar
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<%- include ../partials/modal-status %> 
+<%- include ../partials/modal-delete %>
+<h1>Tarefas a fazer</h1>
+<ul class="collapsible">
+  <% todos.forEach(todo => { %>
+  <li>
+    <div class="collapsible-header"><strike><%= todo.title %></strike></div>
+    <div class="collapsible-body">
+      <span><%= todo.description %></span>
+      <div>
+        <button
+          class="btn waves-effect waves-light modal-trigger btn-status"
+          data-target="status"
+          data-id="<%= todo.id %>"
+          data-status="<%= !todo.status %>"
+        >
+          Desmarcar como concluído
+        </button>
+        <button
+          class="btn waves-effect waves-light modal-trigger btn-delete"
+          data-target="delete"
+          data-id="<%= todo.id %>"
+        >
+          Excluir
+        </button>
+      </div>
+    </div>
+  </li>
+  <% }) %>
+</ul>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <%- include partials/head %>
+  <body>
+    <section class="box-center">
+      <div class="card">
+        <div class="card-content">
+          <form action="/user/session" method="POST">
+            <div class="input-field">
+              <input
+                placeholder="you@example.com"
+                id="email"
+                name="email"
+                type="email"
+                class="validate"
+                required
+              />
+              <label for="email">E-mail</label>
+            </div>
+            <div class="input-field">
+              <input
+                placeholder="batatinha"
+                id="password"
+                name="password"
+                type="password"
+                class="validate"
+                required
+              />
+              <label for="password">Senha</label>
+            </div>
+            <button class="btn waves-effect waves-light">Acessar</button>
+            <div class="center">
+              <a href="/subscribe">Não tenho conta</a>
+            </div>
+          </form>
+        </div>
+        <% if(erro){ %>
+          <div class="erro">Usuário ou senha inválidos</div>
+        <% } %>
+      </div>
+    </section>
+  </body>
+</html>

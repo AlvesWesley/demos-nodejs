@@ -1,0 +1,33 @@
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+.box-center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-center > div {
+  width: 300px;
+}
+
+.box-center button {
+  width: 100%;
+}
+
+.box-center div .center {
+  margin-top: 10px;
+}
+
+.erro {
+  padding: 10px;
+  margin: 0 10px 10px;
+  background: red;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+}

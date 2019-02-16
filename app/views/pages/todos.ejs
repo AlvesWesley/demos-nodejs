@@ -1,0 +1,51 @@
+<%- include ../partials/modal-create %> 
+<%- include ../partials/modal-status %> 
+<%- include ../partials/modal-delete %>
+<h1>Tarefas concluídas</h1>
+<ul class="collapsible">
+  <% todos.forEach(todo => { %>
+  <li>
+    <div class="collapsible-header"><%= todo.title %></div>
+    <div class="collapsible-body">
+      <div>
+        <span><%= todo.description %></span>
+      </div>
+      <div>
+        <button
+          class="btn waves-effect waves-light modal-trigger btn-status"
+          data-target="status"
+          data-id="<%= todo.id %>"
+          data-status="<%= !todo.status %>"
+        >
+          Concluir
+        </button>
+        <button
+          class="btn waves-effect waves-light modal-trigger btn-edit"
+          data-target="create"
+          data-id="<%= todo.id %>"
+          data-title="<%= todo.title %>"
+          data-description="<%= todo.description %>"
+        >
+          Editar
+        </button>
+        <button
+          class="btn waves-effect waves-light modal-trigger btn-delete"
+          data-target="delete"
+          data-id="<%= todo.id %>"
+        >
+          Excluir
+        </button>
+      </div>
+    </div>
+  </li>
+  <% }) %>
+</ul>
+<div class="fixed-action-btn">
+  <button
+    id="btn-create"
+    class="btn-floating btn-large red modal-trigger"
+    data-target="create"
+  >
+    <i class="large material-icons">add</i>
+  </button>
+</div>

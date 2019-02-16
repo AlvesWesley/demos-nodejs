@@ -1,0 +1,19 @@
+<div id="status" class="modal">
+  <div class="modal-content">
+    <form action="/todos/update" method="POST">
+      <input id="status-id" name="id" class="hide" hidden />
+      <input id="status-status" name="status" class="hide" hidden />
+      <div class="center">
+        <h5>Deseja alterar o status da tarefa?</h5>
+      </div>
+      <div>
+        <button class="btn waves-effect waves-light modal-close" type="button">
+          Cancelar
+        </button>
+        <button class="btn waves-effect waves-light right" type="submit">
+          Sim
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

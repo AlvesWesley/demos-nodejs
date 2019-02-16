@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <%- include partials/head %>
+  <body>
+    <section class="box-center">
+      <div class="card">
+        <div class="card-content">
+          <form action="/user/create" method="POST">
+            <div class="input-field">
+              <input
+                placeholder="you@example.com"
+                id="email"
+                name="email"
+                type="email"
+                class="validate"
+              />
+              <label for="email">E-mail</label>
+            </div>
+            <div class="input-field">
+              <input
+                placeholder="batatinha"
+                id="password"
+                name="password"
+                type="password"
+                class="validate"
+              />
+              <label for="password">Senha</label>
+            </div>
+            <div class="input-field">
+              <input
+                placeholder="batatinha"
+                id="confirmation"
+                name="confirmation"
+                type="password"
+                class="validate"
+              />
+              <label for="confirmation">Confirme a senha</label>
+            </div>
+            <button class="btn waves-effect waves-light">Cadastrar</button>
+            <div class="center">
+              <a href="/">Já tenho conta</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<div id="delete" class="modal">
+  <div class="modal-content">
+    <form action="/todos/destroy" method="POST">
+      <input id="delete-id" name="id" class="hide" hidden />
+      <div class="center">
+        <h5>Deseja excluir a tarefa?</h5>
+      </div>
+      <div>
+        <button class="btn waves-effect waves-light modal-close" type="button">
+          Cancelar
+        </button>
+        <button class="btn waves-effect waves-light right" type="submit">
+          Sim
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

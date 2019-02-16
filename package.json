@@ -1,0 +1,30 @@
+{
+  "name": "todo-app-ejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlvesWesley/demos-nodejs.git"
+  },
+  "author": "Wesley Alves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlvesWesley/demos-nodejs/issues"
+  },
+  "homepage": "https://github.com/AlvesWesley/demos-nodejs#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mysql2": "^1.6.5",
+    "require-dir": "^1.2.0",
+    "sequelize": "^4.42.0"
+  }
+}
