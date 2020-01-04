@@ -1,0 +1,54 @@
+{
+  "name": "books",
+  "version": "1.0.0",
+  "description": "Books registration",
+  "main": "app.js",
+  "author": "Wesley Alves",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon --inspect app",
+    "test": "mocha tests/**/*.test.js --env test --exit",
+    "migrate": "sequelize db:migrate",
+    "migrate_test": "sequelize db:migrate --config ./server/db-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlvesWesley/demos-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlvesWesley/demos-nodejs/issues"
+  },
+  "homepage": "https://github.com/AlvesWesley/demos-nodejs#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.9.15",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "helmet": "^3.21.2",
+    "morgan": "^1.9.1",
+    "pg": "^7.17.0",
+    "require-dir": "^1.2.0",
+    "sequelize": "^5.21.3",
+    "umzug": "^2.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-chai-friendly": "^0.5.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^6.2.2",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "sequelize-cli": "^5.5.1"
+  }
+}
